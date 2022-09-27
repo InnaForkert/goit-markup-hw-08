@@ -1,0 +1,72 @@
+.clients {
+
+    &__title {
+        @extend %title
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 170px;
+        height: 92px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 100%;
+    
+        border: 1px solid $social-media-icon;
+        border-radius: 4px;
+    
+        color: $social-media-icon;
+    
+        transition-property: color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: $cubic;
+
+        &:hover, &:focus {
+            color: $accent;
+            border-color: $accent;
+            cursor: pointer;
+        }
+    }
+
+    &__first-icon {
+        width: 41px;
+        height: 47px;
+    }
+
+    &__second-icon {
+        width: 40px;
+        height: 52px;
+    }
+
+    &__third-icon {
+        width: 43px;
+        height: 41px;
+    }
+
+    &__fourth-icon {
+        width: 84px;
+        height: 41px;
+    }
+
+    &__fifth-icon {
+        width: 63px;
+        height: 45px;
+    }
+
+    &__sixth-icon {
+        width: 94px;
+        height: 44px;
+    }
+}
+

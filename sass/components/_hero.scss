@@ -1,0 +1,50 @@
+.hero {
+    min-height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/hero-bcg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__heading {
+        margin: 0 auto 30px;
+        width: 696px;
+    
+        color: $white;
+    
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+    }
+
+    &__btn {
+        padding: 10px 32px;
+        min-width: 216px;
+        text-align: center;
+        border-radius: 4px;
+    
+        color: $white;
+        background-color: $accent;
+        border: none;
+    
+        font-family: $main-font;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        font-size: 16px;
+        line-height: 1.88;
+    
+        cursor: pointer;
+    }
+}

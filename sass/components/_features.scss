@@ -1,0 +1,38 @@
+.features {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 0;
+
+    &__item {
+        width: 270px;
+    } 
+
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__img {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    
+        background-color: $grey-button;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        color: $black-text;
+    }
+
+    &__text {
+        line-height: 1.71;
+    }
+}

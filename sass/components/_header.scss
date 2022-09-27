@@ -1,0 +1,62 @@
+.page-header {
+    border-bottom: 1px solid #ececec;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+
+        text-decoration: none;
+        font-family: $logo-font;
+        font-size: 26px;
+        font-weight: 700;
+
+        color: $black;
+    }
+
+    &__logo--accent {
+        color: $accent;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 50px;
+        margin-left: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__contact {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    
+        color: inherit;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    
+        transition: color 250ms $cubic;
+
+        &:hover, &:focus {
+            color: $accent;
+            cursor: pointer;
+        }
+    }
+
+    &__mail {
+        width: 16px;
+        height: 12px;
+    }
+
+    &__phone {
+        width: 10px;
+        height: 16px;
+    }
+}
+
