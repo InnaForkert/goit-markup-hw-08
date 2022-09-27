@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,38 +28,54 @@
           ><span class="page-header__logo page-header__logo--accent">Web</span
           >Studio</a
         >
-        <nav class="nav">
-          <ul class="list nav__list">
+        <button type="button" class="nav__btn" data-menu-button>
+          <svg width="40px" height="40px" aria-label="Вмикач мобільного меню">
+            <use class="mobile-menu__open" href="./images/icons.svg#icon-menu_nav"></use>
+            <use class="mobile-menu__close" href="./images/icons.svg#icon-close_nav"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <nav class="nav">
+            <ul class="list nav__list">
+              <li>
+                <a href="./index.html" class="nav__item nav__item--current"
+                  >Студія</a
+                >
+              </li>
+              <li><a href="./portfolio.html" class="nav__item">Портфоліо</a></li>
+              <li><a href="#" class="nav__item">Контакти</a></li>
+            </ul>
+          
+          </nav>
+          <ul class="list page-header__contacts">
             <li>
-              <a href="./index.html" class="nav__item nav__item--current"
-                >Студія</a
-              >
+              <a href="mailto:info@devstudio.com" class="page-header__contact">
+                <svg class="page-header__mail">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li><a href="./portfolio.html" class="nav__item">Портфоліо</a></li>
-            <li><a href="#" class="nav__item">Контакти</a></li>
+            <li>
+              <a href="tel:+380961111111" class="page-header__contact">
+                <svg class="page-header__phone">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="list page-header__contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="page-header__contact">
-              <svg class="page-header__mail">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="page-header__contact">
-              <svg class="page-header__phone">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="page-header__social-media list">
+            <li class="page-header__media">Instagram</li>
+            <li class="page-header__media">Twitter</li>
+            <li class="page-header__media">Facebook</li>
+            <li class="page-header__media">LinkedIn</li>
+          </ul>
+        </div>
+        
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="hero">
         <h1 class="hero__heading">
           Ефективні рішення для <br />
@@ -558,7 +575,8 @@
           <button class="feedback-form__submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
