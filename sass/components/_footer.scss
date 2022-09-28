@@ -1,137 +1,134 @@
 .page-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $black-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $black-background;
+  text-align: center;
 
-    &__container {
-        display: flex;
-        
-        align-items: baseline;
-    }
+  &__link {
+    display: block;
+    margin-bottom: 20px;
+    margin-inline: auto;
 
-    &__list {
-        margin-right: 70px;
-    }
+    text-decoration: none;
+    font-family: $logo-font;
+    font-size: 26px;
+    line-height: calc(28 / 24);
+    font-weight: 700;
 
-    &__link {
-        display: block;
-        margin-bottom: 20px;
-        width: 200px;
+    color: $white;
+  }
 
-        text-decoration: none;
-        font-family: $logo-font;
-        font-size: 26px;
-        font-weight: 700;
+  &__logo--accent {
+    color: $accent;
+  }
 
-        color: $white;
-    }
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
 
-    &__logo--accent {
-        color: $accent;
-    }
+    text-transform: uppercase;
+    text-decoration: none;
 
-    &__title {
-        display: inline-block;
-        margin-bottom: 20px;
-        font-weight: 700;
-    
-        text-transform: uppercase;
-        text-decoration: none;
+    color: $white;
+  }
 
-        color: $white;
-    }
+  &__icons {
+    margin-bottom: 60px;
+  }
 
-    &__icon {
-        color: $white;
-    }
+  &__icon {
+    color: $white;
+  }
 }
 
 .address {
-    &__item {
-        display: block;
+  &__item {
+    display: block;
 
-        &:not(:last-child) {
-            margin-bottom: 9px;
-        }
-
-        & + & {
-            opacity: 0.6;
-        }
+    &:not(:last-child) {
+      margin-bottom: 8px;
     }
 
-    &__link {
-        display: block;
-        color: $white;
-
-        text-decoration: none;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 1.71;
-
-        transition: color 250ms $cubic;
-
-        &:visited {
-            @extend .address__link
-        }
-
-        &:hover, :focus {
-            color: $accent;
-        }
+    &:last-child {
+      margin-bottom: 60px;
     }
+
+    & + & {
+      opacity: 0.6;
+    }
+  }
+
+  &__link {
+    display: block;
+    z-index: 0;
+
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    line-height: calc(24 / 14);
+
+    color: $white;
+
+    transition: color 250ms $cubic;
+
+    &:visited {
+      @extend .address__link;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent;
+      z-index: 0;
+    }
+  }
 }
 
 .subscribe {
-    margin-right: 0;
-    margin-left: auto;
+  &__input {
+    display: block;
 
-    &__input {
-        display: block;
-        
-        width: 358px;
-        height: 50px;
-        padding: 15px;
-    
-        color: $white;
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 4px;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 20px;
 
-        &::placeholder {
-            font-size: 16px;
-            color: rgba(255, 255, 255, 0.6);
-        }
+    color: $white;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    &::placeholder {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
     }
+  }
 
-    &__container {
-        display: flex;
-        gap: 10px;
-    }
-
-    &__icon {
-        display: inline;
-        width: 24px;
-        height: 24px;
-    }
-
+  &__icon {
+    display: inline;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .submit-btn {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 
-    min-width: 200px;
-    padding: 10px 28px;
-    border: none;
+  min-width: 200px;
+  padding: 10px 28px;
+  margin-inline: auto;
+  border: none;
 
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
 
-    border-radius: 4px;
-    background-color: $accent;
-    color: $white;
+  border-radius: 4px;
+  background-color: $accent;
+  color: $white;
 
-    cursor: pointer;
+  cursor: pointer;
 }

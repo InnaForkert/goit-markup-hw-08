@@ -18,6 +18,10 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-width: 768px) {
+    margin-top: 80px;
+  }
+
   &__heading {
     margin: 0 auto 30px;
 

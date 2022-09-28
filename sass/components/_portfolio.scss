@@ -1,111 +1,127 @@
 .products {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  &__btns {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 8px;
 
-    &__btns {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-        margin-bottom: 50px;
-    }
+    width: 326px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+  }
 
-    &__btn {
+  &__btn {
     padding: 6px 22px;
-        border-radius: 4px;
-    
-        color: $black-text;
-        background-color: $grey-button;
-        border: none;
-    
-        font-family: $main-font;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        letter-spacing: 0.03em;
-    
-        cursor: pointer;
-    
-        transition-property: color, background-color, box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: $cubic;
+    border-radius: 4px;
 
-        &:hover, &:focus {
-            color: $white;
-            background-color: $accent;
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        }
+    color: $black-text;
+    background-color: $grey-button;
+    border: none;
+
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $accent;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+  }
 
-    &__item {
-        width: 370px;
-        margin: 0;
+  &__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    display: block;
+
+    text-decoration: none;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+      & .products__descr {
+        transform: translateY(-100%);
+      }
     }
+  }
 
-    &__link {
-        display: block;
+  &__name {
+    padding: 20px 24px;
 
-        text-decoration: none;
+    border: 1px solid $grey;
+    border-top: none;
+  }
 
-        transition-property: box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: $cubic;
+  &__title {
+    font-weight: 700;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 0.06em;
 
-        &:hover, &:focus {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    color: $black-text;
+  }
 
-            & .products__descr {
-                transform: translateY(-100%);
-            }
-        }
-    }
+  &__text {
+    margin-top: 4px;
 
-    &__name {
-        padding: 20px 24px;
-        
-        border: 1px solid $grey;
-        border-top: none;
-    }
+    font-size: 16px;
+    line-height: calc(36 / 16);
+  }
 
-    &__title {
-        font-weight: 700;
-        line-height: 2;
-        font-size: 18px;
-        letter-spacing: 0.06em;
-    
-        color: $black-text;
-        }
-        
-    &__text {
-        margin-top: 4px;
-    
-        font-size: 16px;
-        line-height: 1.88;
-        }
-        
-    &__img {
-        position: relative;
-        overflow: hidden;
-        }
-    
+  &__img {
+    position: relative;
+    overflow: hidden;
 
-    &__descr {
-        position: absolute;
-        top: 100%;
-    
-        width: 100%;
-        height: 100%;
-    
-        padding: 63px 24px;
-    
-        font-size: 18px;
-        line-height: 1.56;
-    
-        background-color: $accent-transparent;
-        color: $white;
-    
-        transition-property: transform;
-        transition-duration: 250ms;
-        transition-timing-function: $cubic;
-    }
+    width: 450px;
+    height: 294px;
+  }
+
+  &__photo {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__descr {
+    position: absolute;
+    top: 100%;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 77px 24px;
+
+    font-size: 18px;
+    line-height: calc(28 / 18);
+
+    background-color: $accent-transparent;
+    color: $white;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic;
+  }
 }

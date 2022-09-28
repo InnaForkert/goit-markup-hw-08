@@ -12,6 +12,8 @@ a {
 }
 
 body {
+  min-width: 320px;
+
   font-family: $main-font;
   color: $grey-text;
   letter-spacing: 0.03em;
