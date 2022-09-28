@@ -13,6 +13,10 @@
   &__item {
     width: calc(50% - 15px);
     height: 92px;
+
+    @media (min-width: 768px) {
+      width: calc(100% / 3 - 20px);
+    }
   }
 
   &__link {

@@ -11,6 +11,11 @@
     width: 326px;
     margin-bottom: 50px;
     margin-top: 60px;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -45,6 +50,11 @@
   &__item {
     width: 100%;
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      width: calc(50% - 15px);
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -94,13 +104,15 @@
     position: relative;
     overflow: hidden;
 
-    width: 450px;
-    height: 294px;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__photo {
-    position: absolute;
-    top: -40px;
     width: 100%;
     height: auto;
   }

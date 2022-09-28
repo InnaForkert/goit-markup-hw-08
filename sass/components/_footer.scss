@@ -4,6 +4,14 @@
   background-color: $black-background;
   text-align: center;
 
+  &__tablet {
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 165px;
+      justify-content: center;
+    }
+  }
+
   &__link {
     display: block;
     margin-bottom: 20px;
@@ -97,6 +105,11 @@
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+
+    @media (min-width: 768px) {
+      width: 450px;
+      margin-inline: auto;
+    }
 
     &::placeholder {
       font-size: 16px;
