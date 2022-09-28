@@ -1,11 +1,15 @@
 .page-header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   padding-inline: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 
   border-bottom: 1px solid #ececec;
+  background-color: $white;
 
   &__container {
     display: flex;

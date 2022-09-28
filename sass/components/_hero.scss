@@ -1,50 +1,53 @@
 .hero {
-    min-height: 600px;
-    max-width: 1600px;
-    margin: 0 auto;
+  width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+
+  text-align: center;
+  padding: 118px 60px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/hero-bcg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__heading {
+    margin: 0 auto 30px;
+
+    color: $white;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
 
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../../images/hero-bcg.jpg");
+  &__btn {
+    padding: 10px 32px;
+    min-width: 216px;
+    text-align: center;
+    border-radius: 4px;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: $white;
+    background-color: $accent;
+    border: none;
 
-    &__heading {
-        margin: 0 auto 30px;
-        width: 696px;
-    
-        color: $white;
-    
-        text-transform: uppercase;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-    }
+    font-family: $main-font;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.88;
 
-    &__btn {
-        padding: 10px 32px;
-        min-width: 216px;
-        text-align: center;
-        border-radius: 4px;
-    
-        color: $white;
-        background-color: $accent;
-        border: none;
-    
-        font-family: $main-font;
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        font-size: 16px;
-        line-height: 1.88;
-    
-        cursor: pointer;
-    }
+    cursor: pointer;
+  }
 }
