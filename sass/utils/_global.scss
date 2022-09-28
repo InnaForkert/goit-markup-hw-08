@@ -4,67 +4,73 @@ h3,
 h4,
 p,
 b {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 body {
-    font-family: $main-font;
-    color: $grey-text;
-    letter-spacing: 0.03em;
-    font-size: 14px;
+  font-family: $main-font;
+  color: $grey-text;
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    // width: 1200px;
-    // margin: 0 auto;
-    // padding-left: 15px;
-    // padding-right: 15px;
+.link {
+  display: inline-block;
+  color: currentColor;
+  text-decoration: none;
 }
+
+// .container {
+//   // width: 1200px;
+//   // margin: 0 auto;
+//   // padding-left: 15px;
+//   // padding-right: 15px;
+// }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .icon {
-    display: block;
+  display: block;
 }
 
 %title {
-    margin-bottom: 50px;
-    text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
 
-    color: $black-text;
+  color: $black-text;
 
-    font-weight: 700;
-    font-size: 36px;
+  font-weight: 700;
+  font-size: 36px;
 }

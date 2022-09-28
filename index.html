@@ -11,14 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
     <title>WebStudio | Homepage</title>
   </head>
   <body>
@@ -30,26 +30,38 @@
         >
         <button type="button" class="nav__btn" data-menu-button>
           <svg width="40px" height="40px" aria-label="Вмикач мобільного меню">
-            <use class="mobile-menu__open" href="./images/icons.svg#icon-menu_nav"></use>
-            <use class="mobile-menu__close" href="./images/icons.svg#icon-close_nav"></use>
+            <use
+              class="mobile-menu__open"
+              href="./images/icons.svg#icon-menu_nav"
+            ></use>
+            <use
+              class="mobile-menu__close"
+              href="./images/icons.svg#icon-close_nav"
+            ></use>
           </svg>
         </button>
         <div class="mobile-menu">
           <nav class="nav">
             <ul class="list nav__list">
-              <li>
+              <li class="nav__list-item">
                 <a href="./index.html" class="nav__item nav__item--current"
                   >Студія</a
                 >
               </li>
-              <li><a href="./portfolio.html" class="nav__item">Портфоліо</a></li>
-              <li><a href="#" class="nav__item">Контакти</a></li>
+              <li class="nav__list-item">
+                <a href="./portfolio.html" class="nav__item">Портфоліо</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="#" class="nav__item">Контакти</a>
+              </li>
             </ul>
-          
           </nav>
           <ul class="list page-header__contacts">
             <li>
-              <a href="mailto:info@devstudio.com" class="page-header__contact">
+              <a
+                href="mailto:info@devstudio.com"
+                class="page-header__contact link"
+              >
                 <svg class="page-header__mail">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -57,7 +69,10 @@
               </a>
             </li>
             <li>
-              <a href="tel:+380961111111" class="page-header__contact">
+              <a
+                href="tel:+380961111111"
+                class="page-header__contact link page-header__phone-link"
+              >
                 <svg class="page-header__phone">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -66,13 +81,20 @@
             </li>
           </ul>
           <ul class="page-header__social-media list">
-            <li class="page-header__media">Instagram</li>
-            <li class="page-header__media">Twitter</li>
-            <li class="page-header__media">Facebook</li>
-            <li class="page-header__media">LinkedIn</li>
+            <li class="page-header__media">
+              <a href="#" class="link">Instagram</a>
+            </li>
+            <li class="page-header__media">
+              <a href="#" class="link">Twitter</a>
+            </li>
+            <li class="page-header__media">
+              <a href="#" class="link">Facebook</a>
+            </li>
+            <li class="page-header__media">
+              <a href="#" class="link">LinkedIn</a>
+            </li>
           </ul>
         </div>
-        
       </div>
     </header>
     <!-- <main>
