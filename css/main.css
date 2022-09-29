@@ -374,14 +374,17 @@ img {
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__btn.is-open + .mobile-menu {
-  transform: translateX(-100%);
+@media (max-width: 768px) {
+  .nav__btn.is-open + .mobile-menu {
+    transform: translateX(-100%);
+  }
 }
 
 .mobile-menu {
   position: absolute;
   top: 0;
   left: 100%;
+  display: block;
   height: 100vh;
   width: 100vw;
   padding: 38px 40px;
@@ -620,6 +623,7 @@ img {
 
 .hero {
   width: 100%;
+  max-width: 1600px;
   height: auto;
   text-align: center;
   padding: 118px 60px;
