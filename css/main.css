@@ -142,12 +142,12 @@ img {
   color: #2196f3;
 }
 .page-header__contacts {
-  position: absolute;
+  position: fixed;
   bottom: 134px;
   display: flex;
   flex-direction: column-reverse;
-  flex-wrap: nowrap;
   gap: 32px;
+  margin-top: auto;
 }
 @media (min-width: 768px) {
   .page-header__contacts {
@@ -211,9 +211,10 @@ img {
   }
 }
 .page-header__social-media {
-  position: absolute;
-  bottom: 48px;
+  position: fixed;
+  bottom: 64px;
   display: flex;
+  margin-top: 64px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
@@ -585,8 +586,13 @@ img {
   height: 24px;
 }
 .subscribe__container {
-  display: flex;
-  gap: 10px;
+  display: block;
+}
+@media (min-width: 1200px) {
+  .subscribe__container {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .submit-btn {

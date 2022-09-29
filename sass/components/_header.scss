@@ -56,13 +56,14 @@
   }
 
   &__contacts {
-    position: absolute;
+    position: fixed;
     bottom: 134px;
 
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: nowrap;
     gap: 32px;
+
+    margin-top: auto;
 
     @media (min-width: $tablet) {
       position: static;
@@ -130,10 +131,12 @@
   }
 
   &__social-media {
-    position: absolute;
-    bottom: 48px;
+    position: fixed;
+    bottom: 64px;
 
     display: flex;
+
+    margin-top: 64px;
 
     font-weight: 500;
     font-size: 18px;

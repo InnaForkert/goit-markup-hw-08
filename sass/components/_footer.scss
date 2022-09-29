@@ -163,8 +163,11 @@
   }
 
   &__container {
-    display: flex;
-    gap: 10px;
+    display: block;
+    @media (min-width: $computer) {
+      display: flex;
+      gap: 10px;
+    }
   }
 }
 
