@@ -167,12 +167,10 @@
           <ul class="activities__list list">
             <li>
               <div class="activities__item">
-                <img
-                  src="./images/sec-1-1.jpg"
-                  alt="програміст пише код"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source srcset="./images/activities/act1.webp 1x, ./images/activities/act1@2x.webp 2x, ./images/activities/act1@3x.webp 3x" type="image/webp">
+                  <img loading="lazy" srcset="./images/activities/act1.jpg 1x, ./images/activities/act1@2x.jpg 2x, ./images/activities/act1@3x.jpg 3x" src="./images/activities/act1.jpg" alt="програміст пише код" width="370" height="294"/>
+                </picture>
                 <div class="activities__descr">
                   <p>Десктопні додатки</p>
                 </div>
@@ -181,12 +179,14 @@
 
             <li>
               <div class="activities__item">
-                <img
-                  src="./images/sec-1-2.jpg"
-                  alt="дизайнер розроблює інтерфейс користувача"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/activities/act2.webp 1x, ./images/activities/act2@2x.webp 2x, ./images/activities/act2@3x.webp 3x"
+                    type="image/webp">
+                  <img loading="lazy"
+                    srcset="./images/activities/act2.jpg 1x, ./images/activities/act2@2x.jpg 2x, ./images/activities/act2@3x.jpg 3x"
+                    src="./images/activities/act2.jpg" alt="дизайнер розроблює інтерфейс користувача" width="370" height="294" />
+                </picture>
                 <div class="activities__descr">
                   <p>Мобільні додатки</p>
                 </div>
@@ -194,12 +194,14 @@
             </li>
             <li>
               <div class="activities__item">
-                <img
-                  src="./images/sec-1-3.jpg"
-                  alt="дизайнер підбирає палітру кольорів"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/activities/act3.webp 1x, ./images/activities/act3@2x.webp 2x, ./images/activities/act3@3x.webp 3x"
+                    type="image/webp">
+                  <img loading="lazy"
+                    srcset="./images/activities/act3.jpg 1x, ./images/activities/act3@2x.jpg 2x, ./images/activities/act3@3x.jpg 3x"
+                    src="./images/activities/act3.jpg" alt="дизайнер підбирає палітру кольорів" width="370" height="294" />
+                </picture>
                 <div class="activities__descr">
                   <p>Дизайнерські рішення</p>
                 </div>
@@ -213,17 +215,21 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/sec-2-1.jpg"
-                alt="Ігор Дем'яненко, Product Designer"
-                width="270"
-                height="260"
-                class="team__photo"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/team1.webp 540w, ./images/team/team1@2x.webp 810w, ./images/team/team1@3x.webp 1350w"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw">
+                <img loading="lazy"
+                  srcset="./images/team/team1.jpg 540w, ./images/team/team1@2x.jpg 810w, ./images/team/team1@3x.jpg 1350w"
+                  src="./images/team/team1.jpg" alt="Ігор Дем'яненко, Product Designer" 
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw"
+                  class="team__photo"/>
+              </picture>
               <div class="team__descr">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
-                <ul class="list social-media">
+                <ul class="list social-media">  
                   <li class="social-media__item">
                     <a href="#" class="social-media__link">
                       <svg class="social-media__icon">
@@ -256,13 +262,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/sec-2-2.jpg"
-                alt="Ольга Рєпіна, Frontend Developer"
-                width="270"
-                height="260"
-                class="team__photo"
-              />
+              <picture>
+                <source srcset="./images/team/team2.webp 540w, ./images/team/team2@2x.webp 810w, ./images/team/team2@3x.webp 1350w"
+                  type="image/webp" sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw">
+                <img loading="lazy"
+                  srcset="./images/team/team2.jpg 540w, ./images/team/team2@2x.jpg 810w, ./images/team/team2@3x.jpg 1350w"
+                  src="./images/team/team2.jpg" alt="Ольга Рєпіна, Frontend Developer"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw" 
+                  class="team__photo"/>
+              </picture>
               <div class="team__descr">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -299,13 +307,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/sec-2-3.jpg"
-                alt="Микола Тарасов, Marketing"
-                width="270"
-                height="260"
-                class="team__photo"
-              />
+              <picture>
+                <source srcset="./images/team/team3.webp 540w, ./images/team/team3@2x.webp 810w, ./images/team/team3@3x.webp 1350w"
+                  type="image/webp" sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw">
+                <img loading="lazy"
+                  srcset="./images/team/team3.jpg 540w, ./images/team/team3@2x.jpg 810w, ./images/team/team3@3x.jpg 1350w"
+                  src="./images/team/team3.jpg" alt="Микола Тарасов, Marketing"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw" class="team__photo" />
+              </picture>
               <div class="team__descr">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -342,13 +351,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/sec-2-4.jpg"
-                alt="Михайло Єрмаков, UI Designer"
-                width="270"
-                height="260"
-                class="team__photo"
-              />
+              <picture>
+                <source srcset="./images/team/team4.webp 540w, ./images/team/team4@2x.webp 810w, ./images/team/team4@3x.webp 1350w"
+                  type="image/webp" sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw">
+                <img loading="lazy"
+                  srcset="./images/team/team4.jpg 540w, ./images/team/team4@2x.jpg 810w, ./images/team/team4@3x.jpg 1350w"
+                  src="./images/team/team4.jpg" alt="Михайло Єрмаков, UI Designer"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 50vw, 100vw" class="team__photo" />
+              </picture>
               <div class="team__descr">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
