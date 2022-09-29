@@ -69,6 +69,10 @@
       line-height: calc(16 / 14);
 
       color: rgba(117, 117, 117, 0.5);
+
+      @media (min-width: $computer) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -120,6 +124,10 @@
 
     font-size: 12px;
     line-height: calc(14 / 12);
+
+    @media (min-width: $computer) {
+      padding-left: 36px;
+    }
   }
 
   &__checkbox-icon {

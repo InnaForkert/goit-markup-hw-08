@@ -8,14 +8,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media (min-width: $computer) {
+      justify-content: center;
+    }
   }
 
   &__item {
     width: calc(50% - 15px);
     height: 92px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       width: calc(100% / 3 - 20px);
+    }
+    @media (min-width: $computer) {
+      width: 170px;
     }
   }
 

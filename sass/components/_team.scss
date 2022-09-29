@@ -10,7 +10,7 @@
 
     text-align: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -27,9 +27,13 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: $white;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       width: calc(50% - 15px);
       margin-bottom: 0;
+    }
+
+    @media (min-width: $computer) {
+      width: 270px;
     }
   }
 

@@ -4,11 +4,27 @@
   background-color: $black-background;
   text-align: center;
 
+  @media (min-width: $computer) {
+    text-align: left;
+  }
+
+  &__container {
+    @media (min-width: $computer) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
   &__tablet {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       display: flex;
       gap: 165px;
       justify-content: center;
+    }
+    @media (min-width: $computer) {
+      display: flex;
+      gap: 70px;
+      align-items: baseline;
     }
   }
 
@@ -24,6 +40,10 @@
     font-weight: 700;
 
     color: $white;
+
+    @media (min-width: $computer) {
+      width: 200px;
+    }
   }
 
   &__logo--accent {
@@ -43,6 +63,10 @@
 
   &__icons {
     margin-bottom: 60px;
+
+    @media (min-width: $computer) {
+      margin-bottom: 0;
+    }
   }
 
   &__icon {
@@ -56,10 +80,16 @@
 
     &:not(:last-child) {
       margin-bottom: 8px;
+      @media (min-width: $computer) {
+        margin-bottom: 9px;
+      }
     }
 
     &:last-child {
       margin-bottom: 60px;
+      @media (min-width: $computer) {
+        margin-bottom: 0;
+      }
     }
 
     & + & {
@@ -93,6 +123,10 @@
 }
 
 .subscribe {
+  @media (min-width: $computer) {
+    margin-right: 0;
+    margin-left: auto;
+  }
   &__input {
     display: block;
 
@@ -106,9 +140,14 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       width: 450px;
       margin-inline: auto;
+    }
+
+    @media (min-width: $computer) {
+      width: 358px;
+      margin-bottom: 0;
     }
 
     &::placeholder {
@@ -121,6 +160,11 @@
     display: inline;
     width: 24px;
     height: 24px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 10px;
   }
 }
 
@@ -144,4 +188,7 @@
   color: $white;
 
   cursor: pointer;
+  @media (min-width: $computer) {
+    margin-inline: 0;
+  }
 }

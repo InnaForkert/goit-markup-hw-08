@@ -1,18 +1,19 @@
-  $main-font: "Roboto",
-  sans-serif;
-  $logo-font: "Raleway",
-  sans-serif;
+$main-font: "Roboto", sans-serif;
+$logo-font: "Raleway", sans-serif;
 
-  $accent: #2196f3;
-  $accent-transparent: rgba(33, 150, 243, 0.9);
-  $black-text: #212121;
-  $grey-text: #757575;
-  $black-background: #2f303a;
-  $grey-button: #f5f4fa;
-  $white: #fff;
-  $black: #000;
-  $grey: #eee;
-  $social-media-icon: #afb1b8;
-  $activity-bcg: rgba(47, 48, 58, 0.8);
+$accent: #2196f3;
+$accent-transparent: rgba(33, 150, 243, 0.9);
+$black-text: #212121;
+$grey-text: #757575;
+$black-background: #2f303a;
+$grey-button: #f5f4fa;
+$white: #fff;
+$black: #000;
+$grey: #eee;
+$social-media-icon: #afb1b8;
+$activity-bcg: rgba(47, 48, 58, 0.8);
 
-  $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+$tablet: 768px;
+$computer: 1200px;

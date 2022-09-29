@@ -7,12 +7,9 @@ b {
   margin: 0;
 }
 
-a {
-  color: inherit;
-}
-
 body {
   min-width: 320px;
+  max-width: 100vw;
 
   font-family: $main-font;
   color: $grey-text;
@@ -41,11 +38,19 @@ img {
 .container {
   padding-inline: 15px;
   margin: 0 auto;
+
+  @media (min-width: $computer) {
+    width: $computer;
+  }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media (min-width: $computer) {
+    padding-block: 94px;
+  }
 }
 
 .visually-hidden {
@@ -74,4 +79,9 @@ img {
   font-weight: 700;
   font-size: 28px;
   line-height: calc(33 / 28);
+
+  @media (min-width: $computer) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }

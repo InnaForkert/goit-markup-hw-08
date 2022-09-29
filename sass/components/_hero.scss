@@ -1,8 +1,6 @@
 .hero {
   width: 100%;
-  width: 100%;
   height: auto;
-  margin-top: 60px;
 
   text-align: center;
   padding: 118px 60px;
@@ -18,10 +16,6 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-width: 768px) {
-    margin-top: 80px;
-  }
-
   &__heading {
     margin: 0 auto 30px;
 
@@ -34,6 +28,12 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media (min-width: $computer) {
+      width: 696px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
   }
 
   &__btn {
@@ -53,5 +53,8 @@
     line-height: 1.88;
 
     cursor: pointer;
+    @media (min-width: $computer) {
+      min-width: 216px;
+    }
   }
 }

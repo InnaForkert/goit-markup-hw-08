@@ -1,6 +1,10 @@
 .features {
+  @media (min-width: $computer) {
+    padding-bottom: 0;
+  }
+
   &__list {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -10,8 +14,11 @@
   &__item {
     margin-bottom: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       width: calc(50% - 15px);
+    }
+    @media (min-width: $computer) {
+      width: 270px;
     }
   }
 
@@ -43,6 +50,6 @@
   }
 
   &__text {
-    line-height: 1.71;
+    line-height: calc(24 / 14);
   }
 }

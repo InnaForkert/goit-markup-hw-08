@@ -1,6 +1,10 @@
 .activities {
   display: none;
 
+  @media (min-width: $computer) {
+    display: block;
+  }
+
   &__title {
     @extend %title;
   }
