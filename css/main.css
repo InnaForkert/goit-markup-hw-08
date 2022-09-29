@@ -320,12 +320,18 @@ img {
   .nav__item--current::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -4px;
     left: 0;
+    z-index: 9;
     width: 100%;
     height: 4px;
     border-radius: 2px;
     background-color: #2196f3;
+  }
+}
+@media (min-width: 1200px) {
+  .nav__item--current::after {
+    bottom: -1px;
   }
 }
 .nav__btn {
@@ -661,7 +667,7 @@ img {
 }
 @media (min-width: 1201px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tablet/img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/comp/img.jpg");
     padding-block: 200px;
   }
 }
