@@ -91,8 +91,8 @@ img {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  left: 0;
   right: 0;
+  width: 100%;
   z-index: 99;
   padding-inline: 15px;
   overflow-x: clip;
@@ -955,17 +955,19 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .products__btns {
     justify-content: center;
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
   .products__btns {
     margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 .products__btn {
@@ -991,6 +993,16 @@ img {
 }
 .products__item {
   width: 100%;
+}
+.products__item--visually-hidden {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .products__item--visually-hidden {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 @media (min-width: 480px) {
   .products__item {

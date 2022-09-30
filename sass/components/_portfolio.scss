@@ -4,8 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  
-
   &__btns {
     display: flex;
     flex-wrap: wrap;
@@ -54,9 +52,17 @@
   }
 
   &__item {
+
+    &--visually-hidden {
+      display: none;
+      @media (min-width: $tablet) and (max-width: $computer) {
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
     
-    width: 100%;
-    
+    width: 100%; 
     
     @media (min-width: $mobile) {
       width: 450px;
@@ -73,6 +79,8 @@
   }
 
   &__link {
+
+    
     display: block;
 
     text-decoration: none;
@@ -80,6 +88,8 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: $cubic;
+
+    
 
     &:hover,
     &:focus {
