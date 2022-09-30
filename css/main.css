@@ -1292,8 +1292,8 @@ img {
 }
 .feedback-form__terms-label {
   position: relative;
-  display: inline-block;
-  padding-left: 24px;
+  display: inline;
+  padding-left: 21px;
   cursor: pointer;
   font-size: 12px;
   line-height: 1.1666666667;
