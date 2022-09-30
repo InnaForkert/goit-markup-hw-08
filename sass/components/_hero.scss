@@ -5,7 +5,7 @@
   margin: 0 auto;
 
   text-align: center;
-  padding: 118px 60px;
+  padding: 118px 0;
 
   background-image: linear-gradient(
       to right,
@@ -88,6 +88,7 @@
   }
 
   &__heading {
+    max-width: 360px;
     margin: 0 auto 30px;
 
     color: $white;
@@ -101,7 +102,7 @@
     text-transform: uppercase;
 
     @media (min-width: $computer) {
-      width: 696px;
+      max-width: 700px;
       font-size: 44px;
       line-height: calc(60 / 44);
     }

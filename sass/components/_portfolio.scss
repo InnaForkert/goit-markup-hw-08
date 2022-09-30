@@ -2,13 +2,15 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
+
+  
 
   &__btns {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 
-    width: 326px;
     margin-bottom: 50px;
 
     @media (min-width: $tablet) {
@@ -50,11 +52,16 @@
   }
 
   &__item {
+    
     width: 100%;
-    margin-bottom: 30px;
+    
+    
+    @media (min-width: $mobile) {
+      width: 450px;
+    }
 
     @media (min-width: $tablet) {
-      width: calc(50% - 15px);
+      width: 354px;
       margin-bottom: 0;
     }
     @media (min-width: $computer) {
@@ -81,6 +88,12 @@
         transform: translateY(-100%);
       }
     }
+
+    @media (min-width: $tablet) and (max-width: $computer) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   &__name {
@@ -88,6 +101,10 @@
 
     border: 1px solid $grey;
     border-top: none;
+
+    @media (min-width: $tablet) and (max-width: $computer) {
+      flex-grow: 1;
+    }
   }
 
   &__title {
@@ -110,11 +127,18 @@
     position: relative;
     overflow: hidden;
 
-    width: 100%;
-    height: auto;
-
+  @media (min-width: $mobile) {
+      width: 450px;
+    }
+  
     @media (min-width: $tablet) {
-      width: 100%;
+      width: 354px;
+
+    }
+  
+    @media (min-width: $computer) {
+      width: 370px;
+
     }
   }
 
@@ -141,6 +165,10 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: $cubic;
+    @media (min-width: $tablet) { 
+      padding: 49px 24px;
+      
+    }
     @media (min-width: $computer) {
       padding: 63px 24px;
     }

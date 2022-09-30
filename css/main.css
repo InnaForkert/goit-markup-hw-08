@@ -554,8 +554,10 @@ img {
 .subscribe__input {
   display: block;
   width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 15px;
+  margin-inline: auto;
   margin-bottom: 20px;
   color: #fff;
   background-color: transparent;
@@ -564,7 +566,6 @@ img {
 }
 @media (min-width: 768px) {
   .subscribe__input {
-    width: 450px;
     margin-inline: auto;
   }
 }
@@ -630,7 +631,7 @@ img {
   height: auto;
   margin: 0 auto;
   text-align: center;
-  padding: 118px 60px;
+  padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/header-img.jpg");
   background-size: cover;
   background-position: center;
@@ -678,6 +679,7 @@ img {
   }
 }
 .hero__heading {
+  max-width: 360px;
   margin: 0 auto 30px;
   color: #fff;
   font-weight: 900;
@@ -689,7 +691,7 @@ img {
 }
 @media (min-width: 1200px) {
   .hero__heading {
-    width: 696px;
+    max-width: 700px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -728,11 +730,19 @@ img {
   }
 }
 .features__item {
+  margin: 0 auto;
+}
+.features__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media (min-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
 }
 @media (min-width: 768px) {
   .features__item {
-    width: calc(50% - 15px);
+    width: 354px;
   }
 }
 @media (min-width: 1200px) {
@@ -760,6 +770,11 @@ img {
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: #212121;
+}
+@media (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 .features__text {
   line-height: 1.7142857143;
@@ -811,13 +826,19 @@ img {
 .team__item {
   display: block;
   margin-bottom: 30px;
+  margin-inline: auto;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
+@media (min-width: 480px) {
+  .team__item {
+    width: 450px;
+  }
+}
 @media (min-width: 768px) {
   .team__item {
-    width: calc(50% - 15px);
+    width: 354px;
     margin-bottom: 0;
   }
 }
@@ -853,6 +874,11 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+@media (min-width: 480px) {
+  .clients__list {
+    justify-content: space-evenly;
+  }
+}
 @media (min-width: 1200px) {
   .clients__list {
     justify-content: center;
@@ -862,9 +888,14 @@ img {
   width: calc(50% - 15px);
   height: 92px;
 }
+@media (min-width: 480px) {
+  .clients__item {
+    width: 210px;
+  }
+}
 @media (min-width: 768px) {
   .clients__item {
-    width: calc(33.3333333333% - 20px);
+    width: 226px;
   }
 }
 @media (min-width: 1200px) {
@@ -919,12 +950,12 @@ img {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .products__btns {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  width: 326px;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
@@ -961,11 +992,15 @@ img {
 }
 .products__item {
   width: 100%;
-  margin-bottom: 30px;
+}
+@media (min-width: 480px) {
+  .products__item {
+    width: 450px;
+  }
 }
 @media (min-width: 768px) {
   .products__item {
-    width: calc(50% - 15px);
+    width: 354px;
     margin-bottom: 0;
   }
 }
@@ -988,10 +1023,22 @@ img {
 .products__link:hover .products__descr, .products__link:focus .products__descr {
   transform: translateY(-100%);
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .products__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .products__name {
   padding: 20px 24px;
   border: 1px solid #eee;
   border-top: none;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .products__name {
+    flex-grow: 1;
+  }
 }
 .products__title {
   font-weight: 700;
@@ -1008,12 +1055,20 @@ img {
 .products__img {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: auto;
+}
+@media (min-width: 480px) {
+  .products__img {
+    width: 450px;
+  }
 }
 @media (min-width: 768px) {
   .products__img {
-    width: 100%;
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .products__img {
+    width: 370px;
   }
 }
 .products__photo {
@@ -1033,6 +1088,11 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .products__descr {
+    padding: 49px 24px;
+  }
 }
 @media (min-width: 1200px) {
   .products__descr {
@@ -1077,6 +1137,12 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .modal {
+    top: calc(50% + 40px);
+    max-height: calc(100vh - 80px);
+  }
 }
 @media (min-width: 1200px) {
   .modal {

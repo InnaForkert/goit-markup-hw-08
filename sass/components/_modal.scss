@@ -44,6 +44,11 @@
   opacity: 1;
 
   transition: opacity 250ms $cubic;
+
+  @media (min-width: $tablet) {
+    top: calc(50% + 40px);
+    max-height: calc(100vh - 80px);
+  }
   @media (min-width: $computer) {
     width: 528px;
     height: 581px;

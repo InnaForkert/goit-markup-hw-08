@@ -12,10 +12,17 @@
   }
 
   &__item {
-    margin-bottom: 30px;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $mobile) {
+      width: 450px;
+    }
 
     @media (min-width: $tablet) {
-      width: calc(50% - 15px);
+      width: 354px;
     }
     @media (min-width: $computer) {
       width: 270px;
@@ -47,6 +54,10 @@
     text-transform: uppercase;
 
     color: $black-text;
+
+    @media (min-width: $tablet) {
+      text-align: left;
+    }
   }
 
   &__text {
