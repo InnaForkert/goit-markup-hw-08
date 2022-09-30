@@ -5,17 +5,11 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 
-    @media (min-width: $mobile) {
-      justify-content: space-evenly;
-    }
 
-    @media (min-width: $computer) {
-      justify-content: center;
-    }
   }
 
   &__item {
