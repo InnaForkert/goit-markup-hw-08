@@ -4,24 +4,24 @@
   background-color: $black-background;
   text-align: center;
 
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     text-align: left;
   }
 
   &__container {
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       display: flex;
       align-items: baseline;
     }
   }
 
   &__tablet {
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       gap: 165px;
       justify-content: center;
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       display: flex;
       gap: 70px;
       align-items: baseline;
@@ -41,7 +41,7 @@
 
     color: $white;
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       width: 200px;
     }
   }
@@ -64,7 +64,7 @@
   &__icons {
     margin-bottom: 60px;
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       margin-bottom: 0;
     }
   }
@@ -80,14 +80,14 @@
 
     &:not(:last-child) {
       margin-bottom: 8px;
-      @media (min-width: $computer) {
+      @media screen and (min-width: $computer) {
         margin-bottom: 9px;
       }
     }
 
     &:last-child {
       margin-bottom: 60px;
-      @media (min-width: $computer) {
+      @media screen and (min-width: $computer) {
         margin-bottom: 0;
       }
     }
@@ -123,7 +123,7 @@
 }
 
 .subscribe {
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     margin-right: 0;
     margin-left: auto;
   }
@@ -132,7 +132,7 @@
 
     width: 100%;
     max-width: 450px;
-    
+
     height: 50px;
     padding: 15px;
     margin-inline: auto;
@@ -143,11 +143,11 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       margin-inline: auto;
     }
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       width: 358px;
       margin-bottom: 0;
     }
@@ -166,7 +166,7 @@
 
   &__container {
     display: block;
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       display: flex;
       gap: 10px;
     }
@@ -193,7 +193,7 @@
   color: $white;
 
   cursor: pointer;
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     margin-inline: 0;
   }
 }

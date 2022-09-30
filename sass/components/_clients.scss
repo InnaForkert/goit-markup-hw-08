@@ -14,14 +14,14 @@
     width: calc(50% - 15px);
     height: 92px;
 
-    @media (min-width: $mobile) {
+    @media screen and (min-width: $mobile) {
       width: 210px;
     }
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       width: 226px;
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       width: 170px;
     }
   }

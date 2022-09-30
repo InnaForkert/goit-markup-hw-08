@@ -12,14 +12,14 @@
   border-bottom: 1px solid #ececec;
   background-color: $white;
 
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     width: 100%;
   }
 
   &__container {
     display: flex;
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       align-items: center;
       width: $computer;
       margin: 0 auto;
@@ -37,13 +37,13 @@
 
     color: $black;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       margin-right: 87px;
       padding-top: 26px;
       padding-bottom: 26px;
     }
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       margin-right: 93px;
       padding-top: 24px;
       padding-bottom: 25px;
@@ -65,7 +65,7 @@
 
     margin-top: auto;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       position: static;
 
       gap: 10px;
@@ -76,7 +76,7 @@
       padding-bottom: 21px;
     }
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       flex-direction: row;
       gap: 50px;
       padding-block: 32px;
@@ -98,7 +98,7 @@
       cursor: pointer;
     }
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       gap: 8px;
       align-items: center;
@@ -106,7 +106,7 @@
       font-size: 12px;
     }
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       font-size: 14px;
       gap: 10px;
     }
@@ -120,12 +120,12 @@
 
     color: $accent;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       font-size: 12px;
       color: $grey-text;
     }
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       font-size: 14px;
     }
   }
@@ -146,7 +146,7 @@
 
     color: $accent;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: none;
     }
   }
@@ -163,14 +163,14 @@
   &__mail {
     display: none;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: block;
 
       width: 14px;
       height: 10px;
     }
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       width: 16px;
       height: 12px;
     }
@@ -179,13 +179,13 @@
   &__phone {
     display: none;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: block;
 
       width: 10px;
       height: 14px;
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       height: 16px;
     }
   }
@@ -195,13 +195,13 @@
   &__list-item:not(:last-child) {
     margin-bottom: 32px;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 0;
     }
   }
 
   &__list {
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       gap: 50px;
     }
@@ -227,28 +227,27 @@
       color: $accent;
     }
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       padding-top: 30px;
       padding-bottom: 30px;
 
       font-size: 14px;
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       padding-top: 32px;
       padding-bottom: 32px;
     }
 
     &--current {
-        position: relative;
-        color: $accent;
-      
+      position: relative;
+      color: $accent;
+
       &:visited {
-          color: $accent;
-        }
-      
+        color: $accent;
+      }
 
       &::after {
-        @media (min-width: $tablet) {
+        @media screen and (min-width: $tablet) {
           position: absolute;
           content: "";
           bottom: -4px;
@@ -262,11 +261,10 @@
           border-radius: 2px;
           background-color: $accent;
         }
-        @media (min-width: $computer) {
+        @media screen and (min-width: $computer) {
           bottom: -1px;
         }
       }
-      
     }
   }
 
@@ -288,7 +286,7 @@
       fill: $accent;
     }
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: none;
     }
 
@@ -330,15 +328,14 @@
       }
 
       & + .mobile-menu {
-        @media (max-width: $tablet) {
+        @media screen and (max-width: $tablet) {
           transform: translateX(-100%);
         }
       }
-    
     }
   }
 }
-  
+
 .mobile-menu {
   position: absolute;
   top: 0;
@@ -354,7 +351,7 @@
 
   transition: transform 500ms $cubic 10ms;
 
-  @media (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     position: static;
 
     display: flex;

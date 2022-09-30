@@ -11,12 +11,12 @@
 
     margin-bottom: 40px;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       justify-content: center;
       width: 100%;
       margin-bottom: 30px;
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       margin-top: 0;
       margin-bottom: 50px;
     }
@@ -52,35 +52,32 @@
   }
 
   &__item {
-
     &--visually-hidden {
       display: none;
-      @media (min-width: $tablet) and (max-width: $computer) {
+      @media screen and (min-width: $tablet) and (max-width: $computer) {
         display: block;
         opacity: 0;
         pointer-events: none;
       }
     }
-    
-    width: 100%; 
-    
-    @media (min-width: $mobile) {
+
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
       width: 450px;
     }
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       width: 354px;
       margin-bottom: 0;
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       width: 370px;
       margin: 0;
     }
   }
 
   &__link {
-
-    
     display: block;
 
     text-decoration: none;
@@ -88,8 +85,6 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: $cubic;
-
-    
 
     &:hover,
     &:focus {
@@ -101,7 +96,7 @@
       }
     }
 
-    @media (min-width: $tablet) and (max-width: $computer) {
+    @media screen and (min-width: $tablet) and (max-width: $computer) {
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -114,7 +109,7 @@
     border: 1px solid $grey;
     border-top: none;
 
-    @media (min-width: $tablet) and (max-width: $computer) {
+    @media screen and (min-width: $tablet) and (max-width: $computer) {
       flex-grow: 1;
     }
   }
@@ -139,18 +134,16 @@
     position: relative;
     overflow: hidden;
 
-  @media (min-width: $mobile) {
+    @media screen and (min-width: $mobile) {
       width: 450px;
     }
-  
-    @media (min-width: $tablet) {
+
+    @media screen and (min-width: $tablet) {
       width: 354px;
-
     }
-  
-    @media (min-width: $computer) {
-      width: 370px;
 
+    @media screen and (min-width: $computer) {
+      width: 370px;
     }
   }
 
@@ -177,15 +170,13 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: $cubic;
-    @media (max-width: $mobile) {
-    
+    @media screen and (max-width: $mobile) {
       padding: 20px 24px;
     }
-    @media (min-width: $tablet) { 
+    @media screen and (min-width: $tablet) {
       padding: 49px 24px;
-      
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       padding: 63px 24px;
     }
   }

@@ -10,7 +10,7 @@
 
     text-align: center;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -27,20 +27,20 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: $white;
 
-    @media (max-width: $tablet) {
+    @media screen and (max-width: $tablet) {
       margin-inline: auto;
     }
 
-    @media (min-width: $mobile) {
+    @media screen and (min-width: $mobile) {
       width: 450px;
     }
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       width: 354px;
       margin-bottom: 0;
     }
 
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       width: 270px;
     }
   }

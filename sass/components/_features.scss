@@ -1,10 +1,10 @@
 .features {
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     padding-bottom: 0;
   }
 
   &__list {
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -14,7 +14,7 @@
   }
 
   &__item {
-    @media (max-width: $tablet) {
+    @media screen and (max-width: $tablet) {
       margin: 0 auto;
     }
 
@@ -22,14 +22,14 @@
       margin-bottom: 30px;
     }
 
-    @media (min-width: $mobile) {
+    @media screen and (min-width: $mobile) {
       width: 450px;
     }
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       width: 354px;
     }
-    @media (min-width: $computer) {
+    @media screen and (min-width: $computer) {
       width: 270px;
     }
   }
@@ -60,7 +60,7 @@
 
     color: $black-text;
 
-    @media (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       text-align: left;
     }
   }

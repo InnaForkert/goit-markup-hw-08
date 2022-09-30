@@ -38,12 +38,17 @@ img {
 .container {
   padding-inline: 15px;
   margin: 0 auto;
+  width: 100%;
 
-  @media (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
     width: $tablet;
   }
 
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     width: $computer;
   }
 }
@@ -52,7 +57,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     padding-block: 94px;
   }
 }
@@ -84,7 +89,7 @@ img {
   font-size: 28px;
   line-height: calc(33 / 28);
 
-  @media (min-width: $computer) {
+  @media screen and (min-width: $computer) {
     margin-bottom: 50px;
     font-size: 36px;
   }
