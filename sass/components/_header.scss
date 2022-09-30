@@ -239,16 +239,13 @@
     }
 
     &--current {
-      @media (min-width: $tablet) {
         position: relative;
         color: $accent;
-      }
-
+      
       &:visited {
-        @media (min-width: $tablet) {
           color: $accent;
         }
-      }
+      
 
       &::after {
         @media (min-width: $tablet) {
@@ -337,10 +334,11 @@
           transform: translateX(-100%);
         }
       }
+    
     }
   }
 }
-
+  
 .mobile-menu {
   position: absolute;
   top: 0;
