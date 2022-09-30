@@ -38,6 +38,11 @@ img {
   padding-inline: 15px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -727,7 +732,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
     margin: 0 auto;
   }
 }
@@ -825,7 +829,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
   }
 }
 .team__item {
@@ -879,7 +882,6 @@ img {
 
 .clients__list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }

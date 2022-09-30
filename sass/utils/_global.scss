@@ -39,6 +39,10 @@ img {
   padding-inline: 15px;
   margin: 0 auto;
 
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
   @media (min-width: $computer) {
     width: $computer;
   }

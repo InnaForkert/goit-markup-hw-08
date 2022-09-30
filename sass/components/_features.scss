@@ -8,18 +8,16 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      justify-content: center;
 
       margin: 0 auto;
     }
   }
 
   &__item {
-
     @media (max-width: $tablet) {
       margin: 0 auto;
     }
-    
+
     &:not(:last-child) {
       margin-bottom: 30px;
     }
