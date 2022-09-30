@@ -177,6 +177,10 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: $cubic;
+    @media (max-width: $mobile) {
+    
+      padding: 20px 24px;
+    }
     @media (min-width: $tablet) { 
       padding: 49px 24px;
       
