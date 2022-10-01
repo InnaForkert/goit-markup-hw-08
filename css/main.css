@@ -293,7 +293,7 @@ img {
 }
 .nav__item, .nav__item:visited {
   color: #212121;
-  font-size: 40px;
+  font-size: 19px;
   line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -749,6 +749,11 @@ img {
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .features__item {
     width: 450px;
@@ -962,7 +967,9 @@ img {
 .products__btns {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  row-gap: 15px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {

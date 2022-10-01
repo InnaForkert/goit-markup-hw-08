@@ -20,6 +20,9 @@
 
     &:not(:last-child) {
       margin-bottom: 30px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+      }
     }
 
     @media screen and (min-width: $mobile) {
